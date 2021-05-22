@@ -24,7 +24,7 @@ services:
       DB_CONNECTION: 'pgsql'
       DB_HOST: 'db'
       DB_PORT: '5432'
-      DB_DATABASE: 'laravel_development'
+      DB_DATABASE: 'job-hunting-sugoroku'
       DB_USERNAME: 'docker'
       DB_PASSWORD: 'docker'
     volumes:
@@ -43,7 +43,7 @@ services:
       TZ: 'Asia/Tokyo'
       POSTGRES_USER: 'docker'
       POSTGRES_PASSWORD: 'docker'
-      POSTGRES_DB: 'laravel_development'
+      POSTGRES_DB: 'job-hunting-sugoroku'
     volumes:
       - db:/var/lib/postgresql/data
     ports:
