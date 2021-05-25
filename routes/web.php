@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+use App\Http\Controllers\RegisterGameController;
+
+Route::get('/', 'RegisterGameController@index');
+Route::resource('job-hunting-sugoroku', 'RegisterGameController');
