@@ -13,8 +13,8 @@
     <form>
         <label>参加人数</label>
         <select name="nums">
-            @foreach($nums as $i=> $num)
-                <option value="{{ $i }}">$num</option>
+            @foreach($nums as $i => $num)
+                <option value="{{ $i }}">{{ $num }}</option>
             @endforeach
         </select>
         <!-- JSで制御予定 -->

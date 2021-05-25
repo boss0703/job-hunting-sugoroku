@@ -8,6 +8,6 @@ class RegisterGameController extends Controller
 {
     public function index() {
         $nums = config('nums');
-        return view('job-hunting-sugoroku.index')->with(['nums' => $nums]);
+        return view('index')->with(['nums' => $nums]);
     }
 }
