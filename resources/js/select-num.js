@@ -1,5 +1,9 @@
 function selectNum(snum) {
     var div = document.getElementById("users_name");
+    // 初期化
+    while(div.lastChild){
+        div.removeChild(div.firstChild);
+    }
     
     var num = parseInt(snum);
     for(i = 0; i < num; i++) {
